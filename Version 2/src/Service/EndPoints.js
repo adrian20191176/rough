@@ -10,7 +10,7 @@ export const callAppLink = (apiLink) => {
   }
 };
 
-export const callResultLink = () => {
+export const callResultLink = (apiLink) => {
   try {
     return axios.get(port + "/results/");
   } catch (error) {

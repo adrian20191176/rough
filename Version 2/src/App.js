@@ -11,17 +11,17 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <NavigationBar/>
+        <NavigationBar />
         <div className="App">
           <Switch>
             <Route path="/" exact component={AppDeveloper} />
-            <Route path="/app-developer" component={AppDeveloper}/>
+            <Route path="/app-developer" component={AppDeveloper} />
             <Route path="/about-us" component={AboutUs} />
             <Route path="/results" component={Results} />
             <Route path="/Blog" component={Blog} />
           </Switch>
         </div>
-        <Footer/>
+        <Footer />
       </Router>
     );
   }
