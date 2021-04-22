@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Box</title>
+
+    <style>
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.resultContain {
+  display: flex;
+	padding:3vw;
+    padding-bottom: 0;
+  flex-wrap: wrap;
+}
+.subA,.subB,.subC{
+  flex: 20%;
+  margin: 0.2vw 2vw;
+  border: 1px solid rgb(193, 109, 0);
+  object-fit: contain;
+  border-radius:10px;
+  padding:2vw;
+  height:30vh;
+}
+
+.subB{
+  flex: 30%;
+}
+.mainResultss{
+	margin:5vw;
+    margin-top:0;
+    border: 1px solid rgb(193, 109, 0);
+    border-radius:10px;
+    height:30vh;
+}
+
+.headH{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .resultContain {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="resultContain">
+        <div class="subA">
+          <h2 class="headH">adsdkansda</h2>
+          <div class="wrapper" data-anim="base wrapper">
+              
+          </div>
+        </div>
+        <div class="subB">
+            <h2 class="headH">In the trustworthiness insights, if your app is</h2>
+  
+            <ul>In good rating then you will be given 01</ul>
+            <ul>Filled with good reviews then you will be given 01</ul>
+          </div>
+          
+          <div class="subC">
+            <h2 class="headH">In the trustworthiness insights, if your app is</h2>
+  
+            <ul>In good rating then you will be given 01</ul>
+            <ul>Filled with good reviews then you will be given 01</ul>
+          </div>
+      </div>
+      <hr width="50%"/>
+      <div class="mainResultss">
+          <h2 class="headH">In the trustworthiness insights, if your app is</h2>
+    </div>
+</body>
+</html>
