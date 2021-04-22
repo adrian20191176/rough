@@ -15,29 +15,30 @@ function Footer(){return(
 
             <div className="footer-col">
                 <ul>
-                    <li><a href="#">Platform</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Security</a></li>
+                    <li><a href="#">sss</a></li>
+                    <li><a href="#">sss</a></li>
+                    <li><a href="#">sss</a></li>
                 </ul>
             </div>
             <div className="footer-col">
                 
                 <ul>
-                    <li><a href="#">Customer</a></li>
-                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">sssss</a></li>
+                    <li><a href="#">sUse Cases</a></li>
                     <li><a href="#">Customer Stories</a></li>
                     
                 </ul>
             </div>
+            
             <div className="footer-col">
-                
                 <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Blog</a></li>
                     
                 </ul>
             </div>
+
             
         </div>
     </div>

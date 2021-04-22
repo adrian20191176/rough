@@ -79,4 +79,10 @@ body{
 	padding: 10px;
 }
 
+@media screen and (max-width: 700px) {
+	.footer-col{
+		color: aqua	;
+	}
+  }
+
 
