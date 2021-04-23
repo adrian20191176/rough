@@ -4,6 +4,7 @@ import "./appDeveloper.css";
 import { Link} from "react-router-dom";
 import { callAppLink } from "../../Service/EndPoints";
 import background from "../../Images/appDev.jpg";
+import How from "./How"
 
 function AppDeveloper(){
     const history = useHistory();
@@ -40,8 +41,9 @@ function AppDeveloper(){
     }
       return(
     
-    <div className="appDev" style={mystyle}>
-         <div className="textContainer">
+    <div className="appDev">
+        <div className="imgd"style={mystyle}>
+         <div className="textContainer"  >
              
             <form onSubmit={getText}>
              <center><h1>ReachHigh</h1>
@@ -61,6 +63,8 @@ function AppDeveloper(){
             </center>
             </form>
          </div>
+         </div>
+         <How/>
     </div>
     )}
 

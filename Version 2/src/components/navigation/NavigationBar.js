@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function NavigationBar(){return(
     <div className="navigationBar">
         <ul>
+            <Link to={{ pathname: "/app-developer", state: { just: "hi" } }}>
             <li>
             <div id="navLogo"><a href="#logo" style={{padding:0}}>
                 <img id="logoIMG" src="logo1.png"/>
@@ -13,15 +14,22 @@ function NavigationBar(){return(
             </li>
         <   li><a href="#home" id="title">ReachHigh</a></li>
 
-            <Link to={{ pathname: "/app-developer", state: { just: "hi" } }}>
+        </Link>
+            <Link to={{ pathname: "/", state: { just: "hi" } }}>
                 <li><a href="#home">Home</a></li>
             </Link>
             <Link
-              to={{ pathname: "/Container/Results", state: { just: "hi" } }}
-            ><li><a href="#news">News</a></li>
+              to={{ pathname: "/blog", state: { just: "hi" } }}
+            ><li><a href="#news">Blog</a></li>
             </Link>
-            <li className="right"><a href="#contact">Contact</a></li>
-            <li className="right"><a href="#about">About</a></li>
+            <Link to={{ pathname: "/", state: { just: "hi" } }}>
+                <li className="right"><a href="#contact">Contact US</a></li>
+                
+            </Link>
+                <Link to={{ pathname: "/about-us", state: { just: "hi" } }}>
+            <li className="right"><a href="#about">About US</a></li>
+            
+            </Link>
         </ul>
     </div>
     )}

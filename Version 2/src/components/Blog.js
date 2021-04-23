@@ -10,17 +10,12 @@ function Blog() {
   return (
     <div>
       <div class="grid-container">
-        <div class="BlogHeading">
-          <p>
-            What user expect
-            <br /> from
-            <br /> An application Before
-            <br /> Downloading.
-          </p>
-        </div>
-        <img src={img2} alt="blogimg" width="400px" height="400px" />
-        <p class="para1">
-          {" "}
+       <p class="para1">
+          <h1>
+            What user expectfrom an application Before Downloading.
+          </h1>
+          <center><img src={img2} alt="blogimg" width="400px" height="400px" /></center>
+        rr
           If you have a smart phone or other mobile device, you probably use
           apps – to play games, get turn-by-turn directions, access news, books,
           weather, and more. Easy to download and often free, mobile apps can be
@@ -65,7 +60,6 @@ function Blog() {
           information you provide when you register for a service or buy
           something online.
         </p>
-        <img src={img1} alt="blogimg" width="300px" height="400px" />
       </div>
     </div>
   );

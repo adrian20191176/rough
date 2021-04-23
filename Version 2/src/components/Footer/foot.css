@@ -15,11 +15,6 @@ body{
 	color: rgb(255, 255, 255);
 }
 
-.rfooter .row{
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 10em;
-}
 .rfooter ul{
 	list-style: none;
 }
@@ -33,10 +28,6 @@ body{
 	background-color:#1c252e;
 	height: 4em;
 	width: 100%;
-}
-.rfooter .footer-col{
-   width: 25%;
-   padding: 0 15px;
 }
 
 
@@ -79,10 +70,5 @@ body{
 	padding: 10px;
 }
 
-@media screen and (max-width: 700px) {
-	.footer-col{
-		color: aqua	;
-	}
-  }
 
 
