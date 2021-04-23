@@ -1,10 +1,10 @@
 import React from "react";
 import "./AboutUs.css";
-import img1 from "../Images/adrian.jpg";
-import img2 from "../Images/caushi.jpg";
-import img3 from "../Images/delojan.jpg";
-import img4 from "../Images/Shakir.jpg";
-import img5 from "../Images/rinoza.jpg";
+import img1 from "../Images/adribokka.png";
+import img2 from "../Images/cauci.png";
+import img3 from "../Images/delojan.png";
+import img4 from "../Images/shakir.png";
+import img5 from "../Images/rinoza.png";
 import img6 from "../Images/abdullah.png";
 import group from "../Images/group.jpg";
 import Typewriter from "typewriter-effect";
@@ -17,16 +17,24 @@ function AboutUs() {
           <Typewriter
             className="aboutUsH1"
             onInit={(Typewriter) => {
-              Typewriter.typeString("Hello World this is S C A A R D").start();
+              Typewriter.typeString(
+                "Hello World ! This is S C A A R D !"
+              ).start();
             }}
           />
-          <h2 id="aboutUsH2">S C A A R D is everywhere..</h2>
+          <h2 id="aboutUsH2">
+            S C A A R D is all about T E A M - E F F O R T{" "}
+          </h2>
           <h3 id="aboutUsH3">
-            Learn more about our story and the hard-works <br /> people behind
-            the phone is developers
+            Look around our story and the hard-works <br /> people behind what
+            you see are developers
           </h3>
+          <br />
+          <br />
         </div>
-        <img src={group} />
+        <center>
+          <img id="grpPic" src={group} />
+        </center>
       </div>
       <div className="about-us-second">
         <div className="about-us-text2">
@@ -36,9 +44,9 @@ function AboutUs() {
             <br />
           </h2>
           <h3 id="aboutUsH3">
-            ENNATHA SOLLA NAAN ENNATHA SOLLA SOLLA VARTHAYA ILLA...
+            Presenting the Developing Team ...
             <br />
-            NIMMADHI ILLA INI NIMMADHI ILLAAA SDGP LIFE THOLLAA
+            Team is with six members.
           </h3>
         </div>
       </div>

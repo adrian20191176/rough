@@ -1,31 +1,28 @@
 .resultContain {
   display: flex;
-	padding:3vw;
+  padding: 3vw;
   flex-wrap: wrap;
 }
-.subresultContain{
+.subresultContain {
   padding: 3vw;
   padding-top: 10vw;
   padding-left: 3vw;
   flex: 40%;
-  
+
   /* border: 1px solid rgb(193, 109, 0); */
-object-fit: contain;
+  object-fit: contain;
 }
-h2{
-  font-family: 'Noto Sans HK', sans-serif;
+.subResult h2 {
+  font-family: "Noto Sans HK", sans-serif;
   font-size: 3vw;
 }
-ul{
-  font-family: 'Noto Sans HK', sans-serif;
+.subResult ul {
+  font-family: "Noto Sans HK", sans-serif;
   font-size: 1.5vw;
 }
+
 @media screen and (max-width: 700px) {
-  .resultContain {   
+  .resultContain {
     flex-direction: column;
   }
 }
- 
- 
-
-    
