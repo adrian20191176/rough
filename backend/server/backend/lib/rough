@@ -1,0 +1,35 @@
+ // router.get('/results/*', (req, res) =>{
+  //   let downloads = 1;
+  //   let editors = 1;
+  //   let free =1;
+  //   let firstAverage = ((downloads+editors+free)/3)*100;
+  // // TrustWorthiness
+  // let rating = 4*2;
+  // let percentage = Math.floor(0.65824*100);
+  // let status = "Good";
+  // let secondAverage = ((percentage+rating)/110)*100;
+  // // Final
+  // let finalScore = (firstAverage*30+secondAverage*70)/100
+  // let finalStatus = () => {
+  //   if(finalScore>=50) return "Good"
+  //   return "Bad"
+  // }
+  //   res.status(400).json({
+  //     attractiveness:{
+  //       downloads:downloads,
+  //       editors:editors,
+  //       free:free,
+  //       firstAverage:firstAverage,
+  //     },
+  //     trustworthiness:{
+  //       rating: rating,
+  //       topPositive:["Best","Good","Wonderful App","Bestest","Super"],
+  //       topNegative:["I won't recommend","Not good","Awful","Very Bad","Bad"],
+  //       percentage: percentage,
+  //       status: status,
+  //       secondAverage:secondAverage
+  //     },
+  //     finalScore:finalScore
+  //   })
+  // });
+  
