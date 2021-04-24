@@ -1,0 +1,63 @@
+.navigationBar ul {
+  list-style-type: none;
+  background-color: #1c252e;
+  margin: 0;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  color: #989da3;
+  font-weight: bold;
+  font-family: Helvetica;
+  font-size: 20px;
+  height: 9vh;
+}
+
+.navigationBar ul li {
+  padding-top: 2vh;
+  float: left;
+}
+
+.navigationBar li a {
+  padding-top: 0.8vh;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  display: block;
+  color: #989da3;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigationBar li a:hover {
+  color: white;
+}
+
+.navigationBar #navLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.navigationBar #title {
+  padding-left: 1vh;
+  color: white;
+}
+
+#logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.navigationBar .right {
+  float: right;
+}
+
+#navLogo {
+  height: 40px;
+  width: 40px;
+}
+
+#navLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+.rfooter {
+  line-height: 1.5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.rfooter * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rfooter .footer-col h1 {
+  color: rgb(255, 255, 255);
+}
+
+.rfooter ul {
+  list-style: none;
+}
+.rfooter .container {
+  background-color: #28323c;
+  padding: 70px 0;
+  margin: auto;
+}
+
+.rfooter .container2 {
+  background-color: #1c252e;
+  height: 4em;
+  width: 100%;
+}
+
+.rfooter .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.rfooter .footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.rfooter .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.rfooter .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.rfooter .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.rfooter .social-links {
+  padding: 10px;
+}
