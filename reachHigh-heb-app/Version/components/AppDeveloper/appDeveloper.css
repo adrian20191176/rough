@@ -1,0 +1,103 @@
+.appDev .imgd {
+  padding: 5vw;
+}
+.appDev * {
+  padding: 0;
+
+  font-family: sans-serif;
+
+  box-sizing: border-box;
+}
+
+.appDev .box {
+  height: 7vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 3vh;
+}
+
+.textContainer {
+  padding: 8vw 25%;
+  padding-top: 2vw;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+.appDev .box > i {
+  font-size: 20px;
+
+  color: #777;
+}
+
+.appDev .box > input {
+  flex: 1;
+
+  height: 40px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 1.5vw;
+
+  padding-left: 10px;
+}
+
+.appDev button {
+  outline: none;
+  background-color: ivory;
+  border: none;
+  cursor: pointer;
+}
+
+#dialo {
+  color: white;
+  font-size: 15px;
+  margin: 1%;
+  font-weight: normal;
+}
+
+#dialo2 {
+  font-weight: normal;
+  margin-bottom: 2vh;
+  font-size: 2vw;
+  color: white;
+}
+
+.appDev h1 {
+  margin-bottom: 2vh;
+  font-size: 4vw;
+  color: white;
+}
+
+#confirmBtn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+#confirmBtn:hover {
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px white;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .textContainer{
+    padding: 8vw 4vw;
+  }
+  .appDev .box > input {
+    font-size:16px;
+  }
+}

@@ -10,15 +10,15 @@ const port=process.env.PORT||1005
 
 const app = express()
 
-
-app.use('/scaard/',routes)
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
 app.use(cors())
+
+
+app.use('/scaard/',routes)
 
 // This middleware informs the express application to serve our compiled React files
 if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
