@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-
 app.use('/scaard/',router)
 
 // This middleware informs the express application to serve our compiled React files
@@ -26,8 +25,6 @@ if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging')
         res.sendFile(path.join(__dirname, 'reachHigh-heb-app/build', 'index.html'));
     });
 };
-
-app.use('/scaard/', router);
 
 app.listen(port, function () {
   console.log('Server started on port', port);
