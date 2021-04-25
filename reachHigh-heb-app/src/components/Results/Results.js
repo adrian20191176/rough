@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { callResultLink } from "../../Service/EndPoints";
 import ReviewsBar from "../reviews/ReviewsBar";
 import { BiArrowToTop } from "react-icons/bi";
+import axios from 'axios';
 
 function Results() {
   const [firstAverage, setFirstAverage] = useState([]);
@@ -23,7 +24,7 @@ function Results() {
     visibility:'hidden'}); 
 
   const testing = () => {
-    callResultLink().then((dataa)=>{
+    axios.get('/scaard/results/').then((dataa)=>{
     console.log(dataa.data);
     setTitle(dataa.data.title);
     setIcon(

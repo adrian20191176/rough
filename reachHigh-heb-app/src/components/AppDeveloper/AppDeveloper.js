@@ -6,6 +6,7 @@ import { callAppLink } from "../../Service/EndPoints";
 import background from "../../Images/appDev.jpg";
 import How from "./How";
 import { BiSearch } from "react-icons/bi";
+import axios from 'axios';
 
 function AppDeveloper() {
   const history = useHistory();
@@ -38,7 +39,7 @@ function AppDeveloper() {
       setLoading("Not a Valid URL");
       return;
     }
-    callAppLink(sampleTest).then((dataa) => {
+    axios.get('/scaard/app/'+sampleTest).then((dataa) => {
       if (dataa.data.title == "SCAARD") {
         setLoading("We Couldn't Find Your App!");
         return;
