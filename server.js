@@ -3,21 +3,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const cors = require('cors');
 const routes = require('./backend/routes');
 const app = express()
 
 const port=process.env.PORT||1005
 
-function cors (req, res, next) {
-	const origin = req.headers.origin;
-	res.setHeader('Access-Control-Allow-Origin', origin||'*')
-	res.setHeader('Access-Control-Allow-Methods','POST, GET, PUT, DELETE, OPTIONS, XMODIFY')
-	res.setHeader('Access-Control-Allow-Credentials','true')
-	res.setHeader('Access-Control-Max-Age','86400')
-	res.setHeader('Access-Control-Allow-Headers','X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept')
-	next()
-}
-app.use(cors);
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
