@@ -33,7 +33,7 @@ const getResults = (req, res, next) => {
   let topPositive = ["Not Possible","Not Possible","Not Possible","Not Possible","Not Possible"];
   let topNegative = ["Not Possible","Not Possible","Not Possible","Not Possible","Not Possible"];
   gplay.reviews({
-    appId:currentApp,num:1000}).then(async (reviews) =>{
+    appId:currentApp,num:100}).then(async (reviews) =>{
       let sentiments = await run(reviews.data);
       var noRev = sentiments.scoreList.length;
       if(noRev>=10){
