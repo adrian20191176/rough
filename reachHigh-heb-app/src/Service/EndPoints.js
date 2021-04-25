@@ -8,7 +8,7 @@ const api =  axios.create({
 
 export const callAppLink = (apiLink) => {
   try {
-    return api.get("app/"+apiLink)
+    return api.get("apps/"+apiLink)
   } catch (error) {
     console.log("Api error Ocur");
   }

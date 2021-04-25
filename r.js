@@ -1,12 +1,15 @@
-'use strict';
+'use-strict'
 
-const Express = require('express');
-const router = require('./lib');
+const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
+const cors = require('cors');
+const routes = require('./backend/routes');
+const app = express()
 
-const app = Express();
-const port = process.env.PORT || 1005;
+const port=process.env.PORT||1005
 
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -27,8 +30,11 @@ if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging')
     });
 };
 
-app.use('/scaard/', router);
-
-app.listen(port, function () {
-  console.log('Server started on port', port);
+// Catch any bad requests
+app.get('*', (req, res) => {
+    res.status(200).json({
+        msg: 'Catch All'
+    });
 });
+
+app.listen(port, () => console.log(`Server listening on port ${port}`))
