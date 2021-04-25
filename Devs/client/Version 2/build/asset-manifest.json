@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.926ac601.chunk.css",
+    "main.js": "/static/js/main.760c997e.chunk.js",
+    "main.js.map": "/static/js/main.760c997e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eccf1254.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eccf1254.js.map",
+    "static/js/2.891c34e6.chunk.js": "/static/js/2.891c34e6.chunk.js",
+    "static/js/2.891c34e6.chunk.js.map": "/static/js/2.891c34e6.chunk.js.map",
+    "static/js/3.163f8666.chunk.js": "/static/js/3.163f8666.chunk.js",
+    "static/js/3.163f8666.chunk.js.map": "/static/js/3.163f8666.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.926ac601.chunk.css.map": "/static/css/main.926ac601.chunk.css.map",
+    "static/js/2.891c34e6.chunk.js.LICENSE.txt": "/static/js/2.891c34e6.chunk.js.LICENSE.txt",
+    "static/media/Image1.e4ac416d.jpg": "/static/media/Image1.e4ac416d.jpg",
+    "static/media/Image2.15e23d73.jpg": "/static/media/Image2.15e23d73.jpg",
+    "static/media/Shakir.2f52c579.jpg": "/static/media/Shakir.2f52c579.jpg",
+    "static/media/abdullah.ab21b9f9.png": "/static/media/abdullah.ab21b9f9.png",
+    "static/media/adrian.19ae2d73.jpg": "/static/media/adrian.19ae2d73.jpg",
+    "static/media/caushi.b6a569b5.jpg": "/static/media/caushi.b6a569b5.jpg",
+    "static/media/delojan.59a617f4.jpg": "/static/media/delojan.59a617f4.jpg",
+    "static/media/group.524a279a.jpg": "/static/media/group.524a279a.jpg",
+    "static/media/imag1.5a67e20b.jpg": "/static/media/imag1.5a67e20b.jpg",
+    "static/media/rinoza.fc21e447.jpg": "/static/media/rinoza.fc21e447.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eccf1254.js",
+    "static/js/2.891c34e6.chunk.js",
+    "static/css/main.926ac601.chunk.css",
+    "static/js/main.760c997e.chunk.js"
+  ]
+}

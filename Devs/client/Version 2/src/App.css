@@ -1,0 +1,362 @@
+.container {
+  text-align: center;
+  display: grid;
+  grid-row-gap: 50px;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  padding: 10px;
+  margin-left: 200px;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  min-height: 500px;
+  color: aliceblue;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+  width: 85vw;
+  margin: 100px auto;
+  height: 50vw;
+
+  border-radius: 5px;
+}
+button {
+  border: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  outline: none;
+  padding: 8px;
+  width: 80%;
+  height: 45px;
+  max-width: 100px;
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.3s ease-out;
+}
+.btn-group .button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.btn-group .button:hover {
+  background-color: #6e94a8;
+}
+.fieldset {
+  border-color: white;
+  height: 200px;
+  margin-top: -130px;
+}
+.Begin {
+  font-size: 20px;
+}
+.Begin:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.banner {
+  opacity: 0.6;
+  box-shadow: whitesmoke;
+}
+
+input {
+  margin: 0 50px;
+  color: #fff;
+}
+
+.checked {
+  color: orange;
+}
+.star {
+  font-size: 20px;
+}
+.help {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.reviewText {
+  font-size: 18px;
+  text-align: left;
+}
+
+.appImage,
+.review {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/* CONFIRMATION */
+
+.allColumn {
+  padding-top: 4em;
+}
+
+.allColumn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column,
+.appimage {
+  float: left;
+  width: 33.33%;
+}
+
+.column .Typewriter,
+.appimage .Typewriter,
+.column3 .Typewriter {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 70px;
+}
+
+.appimage {
+  border-left: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  height: 32em;
+  padding-top: 10em;
+}
+
+p {
+  font-size: 25px;
+}
+
+input {
+  background-color: #2c3e50;
+  outline: none;
+  height: 40px;
+  width: 78%;
+  margin-left: 25px;
+  font-size: 22px;
+  border: none;
+  color: #fff;
+}
+
+.get {
+  font-size: 22px;
+}
+
+.scoreLable {
+  margin-left: 980px;
+}
+
+.totalScore {
+  margin-left: 900px;
+  margin-top: 50px;
+  color: rgb(8, 57, 83);
+  font-size: 40px;
+  text-shadow: aliceblue;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.no {
+  margin-left: 50px;
+}
+
+.yes,
+.no {
+  font-size: 25px;
+  width: 80px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* RESULTS PAGE */
+
+legend {
+  font-size: 1.5em;
+  color: rgb(232, 247, 165);
+}
+
+.calculateProcess {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 50%;
+  max-height: 650px;
+}
+
+.calculateProcess h4 {
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.calculateProcess p {
+  font-size: 1.2em;
+  color: rgb(196, 194, 188);
+  padding: 0.5em;
+}
+
+.calculateProcess ul {
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.field_set {
+  border-color: black;
+  border-radius: 10px;
+  height: 41em;
+}
+
+.points {
+  float: left;
+  width: 32%;
+  padding-left: 36px;
+  padding-top: 10px;
+}
+
+.left {
+  text-align: justify;
+  float: left;
+}
+
+.right {
+  text-align: justify;
+  float: right;
+}
+
+.right h1 {
+  border: 0.05em solid black;
+  border-radius: 0.2em;
+  margin-right: 1.5em;
+  margin-top: 2em;
+  color: rgb(255, 3, 3);
+}
+
+.left p {
+  font-size: 20px;
+  padding-bottom: 0.5em;
+}
+
+.firstAverage {
+  float: right;
+  padding-left: 9em;
+}
+
+#secondAverage {
+  margin-top: 4em;
+}
+
+.field_set2 {
+  border-color: black;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.resultsBox {
+  margin-top: 29em;
+  max-width: 28em;
+  margin-left: 432px;
+}
+
+.resultsBox h1 {
+  font-size: 70px;
+  margin-top: -1em;
+  color: rgb(208, 187, 187);
+}
+.resultsBox h2 {
+  color: red;
+  margin-top: -0.01em;
+  font-size: 60px;
+}
+
+.field_set3 {
+  border-color: black;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.detailedResults {
+  float: right;
+  width: 30%;
+  padding: 5px;
+  height: 50%;
+  text-align: justify;
+}
+.detailedResults p {
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.detailedResults h1 {
+  font-size: 25px;
+  color: #0a134a;
+}
+.detailedResults h3 {
+  font-size: 23px;
+  color: #0a134a;
+}
+
+/* RESULTS PAGE END */
+/* +++++++++++++++++++++++++++++++++++++++ */
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

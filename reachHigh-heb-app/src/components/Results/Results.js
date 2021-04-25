@@ -22,8 +22,8 @@ function Results() {
   const [loadStyle,loadDone] = useState({
     visibility:'hidden'}); 
 
-  const testing = async () => {
-    const dataa = await callResultLink();
+  const testing = () => {
+    callResultLink().then((dataa)=>{
     console.log(dataa.data);
     setTitle(dataa.data.title);
     setIcon(
@@ -48,7 +48,8 @@ function Results() {
     setFinalStatus(dataa.data.finalStatus);
     loadDone({visibility:'visible'});
     
-  };
+  })
+};
 
   useEffect(() => {
     testing();

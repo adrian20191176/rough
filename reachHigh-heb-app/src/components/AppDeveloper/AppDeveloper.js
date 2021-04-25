@@ -21,7 +21,7 @@ function AppDeveloper() {
     backgroundSize: "cover",
   };
 
-  const getText = async (e) => {
+  const getText = (e) => {
     e.preventDefault();
     setLoading("Searching For Your App ....");
     setBtn("hidden");
@@ -38,14 +38,14 @@ function AppDeveloper() {
       setLoading("Not a Valid URL");
       return;
     }
-    const dataa = await callAppLink(sampleTest);
-    if (dataa.data.title == "SCAARD") {
-      setLoading("We Couldn't Find Your App!");
-      return;
+    callAppLink(sampleTest).then((dataa) => {
+      if (dataa.data.title == "SCAARD") {
+        setLoading("We Couldn't Find Your App!");
+        return;
     }
     setLoading("We Found Your App!");
     setBtn("button");
-    setApp(dataa.data);
+    setApp(dataa.data);})
   };
   return (
     <div className="appDev">

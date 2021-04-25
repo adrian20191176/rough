@@ -1,14 +1,12 @@
 import axios from "axios";
 
 const port = "http://localhost:1005/scaard";
-const api =  axios.create({
-  baseURL: port,
-  responseType: "json"
+const instance = axios.create({
+  baseURL:'https://localhost:1005/scaard'
 });
-
 export const callAppLink = (apiLink) => {
   try {
-    return api.get("apps/"+apiLink)
+    return instance.get(port + "/app/" + apiLink);
   } catch (error) {
     console.log("Api error Ocur");
   }
@@ -16,7 +14,7 @@ export const callAppLink = (apiLink) => {
 
 export const callResultLink = (apiLink) => {
   try {
-    return api.get("/results/"+apiLink)
+    return instance.get(port + "/results/");
   } catch (error) {
     console.log("Unable to get results");
   }
