@@ -7,7 +7,6 @@ import background from "../../Images/appDev.jpg";
 import How from "./How";
 import { BiSearch } from "react-icons/bi";
 import axios from 'axios';
-
 function AppDeveloper() {
   const history = useHistory();
   const [link, setLink] = useState([]);
@@ -22,7 +21,7 @@ function AppDeveloper() {
     backgroundSize: "cover",
   };
 
-  const getText = (e) => {
+  const getText = async (e) => {
     e.preventDefault();
     setLoading("Searching For Your App ....");
     setBtn("hidden");
@@ -39,8 +38,7 @@ function AppDeveloper() {
       setLoading("Not a Valid URL");
       return;
     }
-    setLink(sampleTest);
-    axios.get('/scaard/app/'+sampleTest).then((dataa) => {
+    await axios.get('/scaard/app/'+sampleTest).then((dataa) => {
       if (dataa.data.title == "SCAARD") {
         setLoading("We Couldn't Find Your App!");
         return;
@@ -48,6 +46,8 @@ function AppDeveloper() {
     setLoading("We Found Your App!");
     setBtn("button");
     setApp(dataa.data);})
+    setLink(sampleTest);
+    localStorage.setItem("appId", link);
   };
   return (
     <div className="appDev">

@@ -11,7 +11,7 @@ import Typewriter from "typewriter-effect";
 function AboutUs() {
   return (
     <div>
-      <div id='phoneId' >Currently This Page is Not Resposive For yOur Mobile.<br/><br/><br/>
+      <div id='phoneId' >Currently This Page is Not Available For Your Mobile.<br/><br/><br/>
       <center>LOL 😂</center></div>
     <div className="about-us-main">
       <div className="about-us-first">

@@ -4,6 +4,7 @@ import { callResultLink } from "../../Service/EndPoints";
 import ReviewsBar from "../reviews/ReviewsBar";
 import { BiArrowToTop } from "react-icons/bi";
 import axios from 'axios';
+import fs from 'fs';
 
 function Results(props) {
   const [firstAverage, setFirstAverage] = useState([]);
@@ -23,9 +24,13 @@ function Results(props) {
   const [loadStyle,loadDone] = useState({
     visibility:'hidden'}); 
 
-  const just = props.location.state.just;
+    
   const testing = async () => {
-    axios.get('/scaard/results/'+just).then((dataa)=>{
+    var appId = localStorage.getItem("appId");
+    appId = appId.split("?id=")[1];
+    appId = appId.split("&")[0];
+    console.log(appId);
+    axios.get('/scaard/results/'+appId).then((dataa)=>{
     console.log(dataa.data);
     setTitle(dataa.data.title);
     setIcon(
@@ -88,7 +93,7 @@ function Results(props) {
       </div><br/>
       <div className="mainResultss">
         <h2 className="headH">
-          In the trustworthiness insights, if your app is
+          Possibility for a new user to download your app is,
         </h2>
         <div className="resultContainsss">
           <div className="subResults">
