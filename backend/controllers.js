@@ -31,14 +31,10 @@ const getResults = (req, res, next) => {
   appId = appId.split('&')[0];
   const results = new appResult();
   gplay.app({appId:appId}).then(
-    async (app) =>{
+    (app) =>{
         results.setAttractiveness(app.minInstalls,app.editorsChoice,app.free,app.title,app.icon,app.score)
     }
-  ).catch((err) =>{
-  console.log(err)
-    res.status(200).json({title:"SCAARD"});
-  })
-
+  )
   gplay.reviews({
     appId:appId,num:100}).then(async (reviews) =>{
         // currentApp= appId;

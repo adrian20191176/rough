@@ -39,6 +39,7 @@ function AppDeveloper() {
       setLoading("Not a Valid URL");
       return;
     }
+    setLink(sampleTest);
     axios.get('/scaard/app/'+sampleTest).then((dataa) => {
       if (dataa.data.title == "SCAARD") {
         setLoading("We Couldn't Find Your App!");
@@ -76,7 +77,7 @@ function AppDeveloper() {
               <h4 id="dialo">Enter Your App URL</h4>
               <h1 id="dialo2">{load}</h1>
               <h1 id="dialo2">{loading}</h1>
-              <Link to={{ pathname: "/results", state: { just: "hi" } }}>
+              <Link to={{ pathname: "/results", state: { just: link} }}>
                 <input id="confirmBtn" type={btn} value="Get Your Results" />
               </Link>
             </center>

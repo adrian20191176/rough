@@ -5,7 +5,7 @@ import ReviewsBar from "../reviews/ReviewsBar";
 import { BiArrowToTop } from "react-icons/bi";
 import axios from 'axios';
 
-function Results() {
+function Results(props) {
   const [firstAverage, setFirstAverage] = useState([]);
   const [finalScore, setFinalScore] = useState([]);
   const [finalStatus, setFinalStatus] = useState([]);
@@ -23,13 +23,15 @@ function Results() {
   const [loadStyle,loadDone] = useState({
     visibility:'hidden'}); 
 
-  const testing = () => {
-    axios.get('/scaard/results/').then((dataa)=>{
+  const just = props.location.state.just;
+  const testing = async () => {
+    axios.get('/scaard/results/'+just).then((dataa)=>{
     console.log(dataa.data);
     setTitle(dataa.data.title);
     setIcon(
       dataa.data.icon
     );
+    
     setFirstAverage(dataa.data.attractiveness.firstAverage);
     // setFirstAverage(62);
     setDownloads(dataa.data.attractiveness.downloads);
