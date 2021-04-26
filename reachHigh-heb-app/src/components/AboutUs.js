@@ -28,8 +28,8 @@ function AboutUs() {
             S C A A R D is all about T E A M - E F F O R T{" "}
           </h2>
           <h3 id="aboutUsH3">
-            Look around our story and the hard-works <br /> people behind what
-            you see are developers
+            Get to know our story and our team<br />
+        
           </h3>
           <br />
           <br />
@@ -41,14 +41,16 @@ function AboutUs() {
       <div className="about-us-second">
         <div className="about-us-text2">
           <h2 id="aboutUsH2">
-            its all started in DEVADHA
+            It all started in 2020
             <br />
             <br />
           </h2>
           <h3 id="aboutUsH3">
-            Presenting the Developing Team ...
+            Just a bunch of undergraduates
             <br />
-            Team is with six members.
+            All six of us were friends. Each had primary skills of developing different technologies. One day, all of a sudden,<br/>
+            an idea of helping app entrepreneurs came to our mind. So, we joined our hands to create this web application for those who are in need<br/>
+            of knowing their app's reputaion.
           </h3>
         </div>
       </div>
