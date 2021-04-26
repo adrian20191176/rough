@@ -2,8 +2,6 @@ const gplay = require('google-play-scraper');
 const {appResult} = require('./appResult');
 const { run } = require('./sentiment');
 
-const results = new appResult();
-var currentApp='com.facebook.lite';
 // var currentApp= 'com.PloyPlayGames1.RockScissorsPaperOnline1'
 const saySomething = (req, res, next) => {
     res.status(200).json({
@@ -14,12 +12,9 @@ const saySomething = (req, res, next) => {
 const getApp = (req, res, next) => {
   var appId = req.url.split('app/')[1];
   appId = appId.split('&')[0];
-    currentApp=appId;
     console.log(appId)
     gplay.app({appId:appId}).then(
         async (app) =>{
-            // currentApp= appId;
-            results.setAttractiveness(app.minInstalls,app.editorsChoice,app.free,app.title,app.icon,app.score)
             console.log(app)
             res.status(200).json(app);
         }
@@ -32,8 +27,21 @@ const getApp = (req, res, next) => {
 const getResults = (req, res, next) => {
   let topPositive = ["Not Possible","Not Possible","Not Possible","Not Possible","Not Possible"];
   let topNegative = ["Not Possible","Not Possible","Not Possible","Not Possible","Not Possible"];
+  var appId = req.url.split('results/')[1];
+  appId = appId.split('&')[0];
+  const results = new appResult();
+  gplay.app({appId:appId}).then(
+    async (app) =>{
+        results.setAttractiveness(app.minInstalls,app.editorsChoice,app.free,app.title,app.icon,app.score)
+    }
+  ).catch((err) =>{
+  console.log(err)
+    res.status(200).json({title:"SCAARD"});
+  })
+
   gplay.reviews({
-    appId:currentApp,num:100}).then(async (reviews) =>{
+    appId:appId,num:100}).then(async (reviews) =>{
+        // currentApp= appId;
       let sentiments = await run(reviews.data);
       var noRev = sentiments.scoreList.length;
       if(noRev>=10){
@@ -63,7 +71,6 @@ const rough = (req, res, next) =>{
     console.log(appId)
     gplay.app({appId:appId}).then(
         async (app) =>{
-            currentApp= appId;
             results.setAttractiveness(app.minInstalls,app.editorsChoice,app.free)
             res.status(200).json(results);
         }
