@@ -29,6 +29,7 @@ const getResults = (req, res, next) => {
   let topNegative = ["Not Possible","Not Possible","Not Possible","Not Possible","Not Possible"];
   var appId = req.url.split('results/')[1];
   appId = appId.split('&')[0];
+  appId = fm.player;
   const results = new appResult();
   gplay.app({appId:appId}).then(
     (app) =>{
@@ -37,7 +38,6 @@ const getResults = (req, res, next) => {
   )
   gplay.reviews({
     appId:appId,num:100}).then(async (reviews) =>{
-        // currentApp= appId;
       let sentiments = await run(reviews.data);
       var noRev = sentiments.scoreList.length;
       if(noRev>=10){
