@@ -29,7 +29,7 @@ const getResults = (req, res, next) => {
   let topNegative = ["Not Possible","Not Possible","Not Possible","Not Possible","Not Possible"];
   var appId = req.url.split('results/')[1];
   appId = appId.split('&')[0];
-  appId = fm.player;
+  appId = "fm.player";
   const results = new appResult();
   gplay.app({appId:appId}).then(
     (app) =>{
